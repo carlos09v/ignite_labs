@@ -1,0 +1,63 @@
+			# IgniteLab #4 de NodeJS
+		# Projeto realizado entre 12 e 15 de Dezembro de 2022
+
+-- Aula 01 - Fundamentos do Nest.js & Prisma
+	1. O que são Microserviços?
+		1.1. Dividir o app em apps menores
+		1.2. Comunicação assíncrona entre aplicações
+		1.3. 1 DB pra cada MicroService
+		1.4. Duplicidade de Dados
+
+	2. A diferença do NestJS para outros framewworks ?
+		2.1. Um do frameworks mais completos pra quem trabalha com Node
+		2.2. Diferente do Express ou Fastify (que são microframeworks)
+		2.3. Framework Opinado => Opnião sobre a sua estrutura que irá fazer
+		2.4. Integrações
+		2.5. TypeScript & Decorators
+
+	3. Criação do projeto em NestJS
+		3.1. Modules, services, controllers
+		3.2. Inversão e injeção de dependências
+	
+	4. Setup do Prisma
+		4.1. Model de Notificações
+		4.2. Criando service do Prisma
+
+	5. Rotas e Validação
+		5.1. Criando nova notificação
+		5.2. Validação do corpo da requisição
+
+	6. Por que estudar NodeJS ?
+
+-- Aula 02 - Domínio, casos de uso e regras de negócio
+	1. Um pouco sobre design de software
+		1.1. Desenvolver app sem usar DB
+	2. Entidade de notificação
+		2.1. Getters/setters
+	3. Value Object de conteúdo
+	4. Configuração do Jest
+	5. Criando primeiros testes
+	6. Caso de uso de criação de notificação
+	7. Repositório de Notificações
+	8. Testando caso de uso
+	9. Banco de Dados em memória
+	10. Repositório do Prisma
+	11. Conectando a camada de infraestrutura
+
+-- Aula 03 - Infraestrutura e injeção de dependências
+	1. Configurando TypeScript paths
+	2. Conceito de mappers
+	3. Criando view model
+	4. Casos de uso
+		4.1. Cancelar notificação
+		4.2. Contagem de Notificações
+		4.3. Listagem por recipiente
+		4.4. Ler notificação
+			4.4.1. Protegendo data de leitura
+			4.4.2. Lidando com erros no caso de uso
+		4.5. Desfazer leitura de notificação
+	5. Implementando repositório do Prisma
+		5.1. Entidades existentes (ID)
+		5.2. Caminho inverso no mapper
+		5.3. Factory pattern ( makeNotification )
+	6. Rotas HTTP
