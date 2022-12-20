@@ -1,5 +1,4 @@
 <h1>notifications_service</h1>
-<h3>IgniteLab#4 (NodeJS) da @rocketseat</h3>
 <div align='center'>
     <p>Projeto realizado entre 12 e 15 de Dezembro de 2022</p>
     <h3>Instrutor: <a href='https://github.com/diego3g'>Diego Fernandes</a></h3>
