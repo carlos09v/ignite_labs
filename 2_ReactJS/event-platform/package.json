@@ -19,7 +19,8 @@
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.1"
+    "react-router-dom": "^6.8.1",
+    "react-toastify": "^9.1.1"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^3.0.0",
@@ -44,12 +45,14 @@
     "5": "npm i @vime/core @vime/react --force",
     "6": "npm i classnames",
     "7": "npm i @graphql-codegen/typescript @graphql-codegen/typescript-operations @graphql-codegen/typescript-react-apollo @graphql-codegen/cli -D",
-    "8": "npm run codegen"
+    "8": "npm run codegen",
+    "9": "npm i react-toastify"
   },
   "_comments": {
     "3": "Apollo => requisições http (mais facil pra graphql)",
     "4": "Manipular datas (Formatar, etc)",
     "5": "Media Player Framework (videos)",
-    "8": "Create the generated file"
+    "8": "Create the generated file",
+    "9": "After (myself) -> react-toastify"
   }
 }

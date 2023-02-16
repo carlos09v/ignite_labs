@@ -1,9 +1,9 @@
 import { FormEvent, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 import codeImg from '../assets/code_mockup.png'
 import Logo from '../components/Logo'
 import { useCreateSubscriberMutation } from '../graphql/generated'
-
 
 const Subscribe = () => {
   const navigate = useNavigate()
@@ -14,14 +14,19 @@ const Subscribe = () => {
   const handleSubscribe = async (e: FormEvent) => {
     e.preventDefault()
 
-    await createSubscriber({
-      variables: {
-        name,
-        email
-      }
-    })
+    try {
+      await createSubscriber({
+        variables: {
+          name,
+          email
+        }
+      })
 
-    navigate('/event')
+      navigate('/event')
+    }catch (error) {
+      // console.log(error)
+      return toast.error('Erro ao cadastrar ! Provavelmente o email já está em uso :(')
+    }
   }
 
   return (
