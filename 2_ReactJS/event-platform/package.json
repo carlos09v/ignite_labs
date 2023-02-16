@@ -1,0 +1,55 @@
+{
+  "name": "event-platform",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "codegen": "graphql-codegen"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.7.7",
+    "@vime/core": "^5.4.0",
+    "@vime/react": "^5.4.0",
+    "classnames": "^2.3.2",
+    "date-fns": "^2.29.3",
+    "graphql": "^16.6.0",
+    "phosphor-react": "^1.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^3.0.0",
+    "@graphql-codegen/typescript": "^3.0.0",
+    "@graphql-codegen/typescript-operations": "^3.0.0",
+    "@graphql-codegen/typescript-react-apollo": "^3.3.7",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.6",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
+  },
+  "_commands": {
+    "0": "npm create vite@latest",
+    "1": "npm i tailwindcss postcss autoprefixer -D",
+    "2": "npx tailwindcss init -p",
+    "3": "npm i @apollo/client graphql phosphor-react react-router-dom",
+    "4": "npm i date-fns",
+    "5": "npm i @vime/core @vime/react --force",
+    "6": "npm i classnames",
+    "7": "npm i @graphql-codegen/typescript @graphql-codegen/typescript-operations @graphql-codegen/typescript-react-apollo @graphql-codegen/cli -D",
+    "8": "npm run codegen"
+  },
+  "_comments": {
+    "3": "Apollo => requisições http (mais facil pra graphql)",
+    "4": "Manipular datas (Formatar, etc)",
+    "5": "Media Player Framework (videos)",
+    "8": "Create the generated file"
+  }
+}
